@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f5f1;
+  color: #442c1f;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigace */
+.header {
+  background: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  font-style: italic;
+  color: #c77a5d;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #442c1f;
+  font-weight: 500;
+}
+
+/* Hero sekce */
+.hero {
+  background: #f1ebe7;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 50% 50% 0 0;
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #a45b40;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* About sekce */
+.about {
+  background: white;
+  padding: 60px 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  position: relative;
+}
+
+.about-img img,
+.about-side-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-text .intro {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+}
+
+.about-side-img {
+  position: absolute;
+  right: -50px;
+  bottom: -30px;
+  width: 200px;
+  display: none; /* můžeš aktivovat pokud chceš přesahující obrázek */
+}
+
+/* Služby */
+.services {
+  background: #f8f5f2;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #a45b40;
+  margin-bottom: 30px;
+}
+
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service img {
+  width: 100%;
+  border-radius: 50% 50% 0 0;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.btn.small {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
